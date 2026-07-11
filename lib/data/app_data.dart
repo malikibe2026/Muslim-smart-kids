@@ -296,3 +296,468 @@ const List<String> gameEmojis = [
 
 /// Emoji untuk permainan Kira Objek.
 const List<String> countEmojis = ['🍎', '⭐', '🎈', '🐟', '🌸', '🍪'];
+
+// ============================================================ Kebesaran Allah
+class KebesaranItem {
+  final String id;
+  final String emoji;
+  final String titleMs;
+  final String titleEn;
+  final String textMs;
+  final String textEn;
+  const KebesaranItem(this.id, this.emoji, this.titleMs, this.titleEn,
+      this.textMs, this.textEn);
+}
+
+const List<KebesaranItem> kebesaranItems = [
+  KebesaranItem(
+    'gunung',
+    '⛰️',
+    'Gunung Ganang',
+    'The Mountains',
+    'Allah ciptakan gunung ganang yang tinggi dan gagah supaya bumi tidak goyang. Subhanallah, hebatnya ciptaan Allah!',
+    'Allah created tall, mighty mountains so the earth would not shake. SubhanAllah, how amazing Allah\'s creation is!',
+  ),
+  KebesaranItem(
+    'bukit',
+    '🏞️',
+    'Bukit Bukau',
+    'Hills and Valleys',
+    'Allah jadikan bukit bukau dan lembah yang cantik untuk kita lihat dan jadikan tempat tumbuhan hidup subur.',
+    'Allah made beautiful hills and valleys where plants can grow and flourish for us to enjoy.',
+  ),
+  KebesaranItem(
+    'laut',
+    '🌊',
+    'Lautan Luas',
+    'The Vast Ocean',
+    'Allah ciptakan lautan yang sangat luas, penuh dengan ikan dan hidupan yang pelbagai. Semuanya rezeki daripada Allah.',
+    'Allah created the vast ocean, full of fish and many creatures. All of it is sustenance from Allah.',
+  ),
+  KebesaranItem(
+    'langit',
+    '☁️',
+    'Langit Tanpa Tiang',
+    'The Sky Without Pillars',
+    'Allah bina langit yang tinggi tanpa tiang untuk menopangnya. Hanya Allah yang mampu buat begitu.',
+    'Allah raised the sky high without any pillars to hold it up. Only Allah can do such a thing.',
+  ),
+  KebesaranItem(
+    'matahari_bulan',
+    '🌞',
+    'Matahari dan Bulan',
+    'The Sun and the Moon',
+    'Allah jadikan matahari menyinar siang hari dan bulan menyinar malam hari, silih berganti tanpa pernah lupa.',
+    'Allah made the sun shine by day and the moon shine by night, taking turns without ever failing.',
+  ),
+  KebesaranItem(
+    'hujan',
+    '🌧️',
+    'Air Hujan',
+    'The Rain',
+    'Allah turunkan hujan dari langit untuk menyuburkan tanah, memberi minum kepada semua makhluk di bumi.',
+    'Allah sends rain down from the sky to nourish the land and give drink to every creature on earth.',
+  ),
+  KebesaranItem(
+    'makanan',
+    '🍚',
+    'Allah Beri Kita Makan',
+    'Allah Provides Our Food',
+    'Allah yang memberi rezeki kepada semua makhluk-Nya — manusia, haiwan dan tumbuhan. Kita mesti sentiasa bersyukur.',
+    'Allah provides sustenance to all His creatures — humans, animals and plants. We must always be grateful.',
+  ),
+  KebesaranItem(
+    'tumbuhan',
+    '🌳',
+    'Pokok dan Tumbuhan',
+    'Trees and Plants',
+    'Allah tumbuhkan pokok-pokok dan tumbuhan yang memberi kita buah, oksigen dan keteduhan.',
+    'Allah grows trees and plants that give us fruit, oxygen and cool shade.',
+  ),
+  KebesaranItem(
+    'haiwan_ciptaan',
+    '🐾',
+    'Pelbagai Haiwan',
+    'All Kinds of Animals',
+    'Allah ciptakan berjuta-juta jenis haiwan yang berbeza — besar, kecil, terbang, berenang. Semuanya tanda kebesaran Allah.',
+    'Allah created millions of different kinds of animals — big, small, flying, swimming. Each one is a sign of Allah\'s greatness.',
+  ),
+  KebesaranItem(
+    'diri_kita',
+    '🧒',
+    'Diri Kita Sendiri',
+    'Ourselves',
+    'Allah ciptakan kita dengan mata untuk melihat, telinga untuk mendengar dan hati untuk berfikir. Sungguh sempurna ciptaan Allah.',
+    'Allah created us with eyes to see, ears to hear, and a heart to think. Allah\'s creation is truly perfect.',
+  ),
+  KebesaranItem(
+    'syurga',
+    '🌺',
+    'Syurga di Akhirat',
+    'Paradise in the Hereafter',
+    'Allah janjikan syurga yang indah di akhirat untuk orang yang beriman dan buat kebaikan. Penuh dengan nikmat yang kekal.',
+    'Allah promises a beautiful paradise in the Hereafter for those who believe and do good. Full of everlasting blessings.',
+  ),
+  KebesaranItem(
+    'akhirat',
+    '🌌',
+    'Hari Akhirat',
+    'The Day of Judgement',
+    'Allah akan hidupkan semula semua manusia di akhirat untuk dihitung amalan mereka. Allah Maha Adil kepada semua.',
+    'Allah will bring all people back to life on the Day of Judgement to account for their deeds. Allah is Most Just to all.',
+  ),
+];
+
+// ============================================================ Lagu Kanak-kanak (English)
+class RhymeItem {
+  final String id;
+  final String emoji;
+  final String title;
+  final String lyrics;
+  const RhymeItem(this.id, this.emoji, this.title, this.lyrics);
+}
+
+const List<RhymeItem> rhymeItems = [
+  RhymeItem(
+    'twinkle',
+    '⭐',
+    'Twinkle Twinkle Little Star',
+    'Twinkle, twinkle, little star,\nHow I wonder what you are.\nUp above the world so high,\nLike a diamond in the sky.\nTwinkle, twinkle, little star,\nHow I wonder what you are.',
+  ),
+  RhymeItem(
+    'row_boat',
+    '🚣',
+    'Row Row Row Your Boat',
+    'Row, row, row your boat,\nGently down the stream.\nMerrily, merrily, merrily, merrily,\nLife is but a dream.',
+  ),
+  RhymeItem(
+    'old_macdonald',
+    '🚜',
+    'Old MacDonald Had a Farm',
+    'Old MacDonald had a farm, E-I-E-I-O!\nAnd on his farm he had a cow, E-I-E-I-O!\nWith a moo-moo here and a moo-moo there,\nHere a moo, there a moo, everywhere a moo-moo.\nOld MacDonald had a farm, E-I-E-I-O!',
+  ),
+  RhymeItem(
+    'baa_baa',
+    '🐑',
+    'Baa Baa Black Sheep',
+    'Baa, baa, black sheep,\nHave you any wool?\nYes sir, yes sir,\nThree bags full!\nOne for the master,\nOne for the dame,\nAnd one for the little boy\nWho lives down the lane.',
+  ),
+  RhymeItem(
+    'itsy_bitsy',
+    '🕷️',
+    'Itsy Bitsy Spider',
+    'The itsy bitsy spider climbed up the waterspout.\nDown came the rain and washed the spider out.\nOut came the sun and dried up all the rain,\nAnd the itsy bitsy spider climbed up the spout again.',
+  ),
+  RhymeItem(
+    'head_shoulders',
+    '🙆',
+    'Head, Shoulders, Knees and Toes',
+    'Head, shoulders, knees and toes,\nKnees and toes!\nHead, shoulders, knees and toes,\nKnees and toes!\nAnd eyes and ears and mouth and nose,\nHead, shoulders, knees and toes,\nKnees and toes!',
+  ),
+  RhymeItem(
+    'wheels_bus',
+    '🚌',
+    'The Wheels on the Bus',
+    'The wheels on the bus go round and round,\nRound and round, round and round.\nThe wheels on the bus go round and round,\nAll through the town.',
+  ),
+  RhymeItem(
+    'happy',
+    '😊',
+    'If You\'re Happy and You Know It',
+    'If you\'re happy and you know it, clap your hands!\nIf you\'re happy and you know it, clap your hands!\nIf you\'re happy and you know it, and you really want to show it,\nIf you\'re happy and you know it, clap your hands!',
+  ),
+];
+
+// ============================================================ Anggota Badan
+class BodyPartItem {
+  final String emoji;
+  final String ms;
+  final String en;
+  const BodyPartItem(this.emoji, this.ms, this.en);
+}
+
+const List<BodyPartItem> bodyPartItems = [
+  BodyPartItem('👤', 'Kepala', 'Head'),
+  BodyPartItem('👁️', 'Mata', 'Eyes'),
+  BodyPartItem('👃', 'Hidung', 'Nose'),
+  BodyPartItem('👂', 'Telinga', 'Ears'),
+  BodyPartItem('👄', 'Mulut', 'Mouth'),
+  BodyPartItem('🦷', 'Gigi', 'Teeth'),
+  BodyPartItem('💇', 'Rambut', 'Hair'),
+  BodyPartItem('🤚', 'Tangan', 'Hands'),
+  BodyPartItem('👆', 'Jari', 'Fingers'),
+  BodyPartItem('🦵', 'Kaki', 'Legs'),
+  BodyPartItem('🦶', 'Tapak Kaki', 'Feet'),
+  BodyPartItem('🫃', 'Perut', 'Tummy'),
+  BodyPartItem('🦴', 'Bahu', 'Shoulders'),
+  BodyPartItem('🫱', 'Lutut', 'Knees'),
+  BodyPartItem('❤️', 'Hati', 'Heart'),
+];
+
+// ============================================================ Kisah 25 Rasul
+class ProphetItem {
+  final String emoji;
+  final String nameMs;
+  final String nameEn;
+  final String storyMs;
+  final String storyEn;
+  const ProphetItem(this.emoji, this.nameMs, this.nameEn, this.storyMs, this.storyEn);
+}
+
+const List<ProphetItem> prophetItems = [
+  ProphetItem('👨', 'Nabi Adam A.S.', 'Prophet Adam (A.S.)',
+      'Manusia dan nabi yang pertama, diciptakan Allah terus di syurga.',
+      'The first human and the first prophet, created by Allah directly in Paradise.'),
+  ProphetItem('📜', 'Nabi Idris A.S.', 'Prophet Idris (A.S.)',
+      'Nabi yang bijaksana, antara orang pertama yang pandai menulis.',
+      'A wise prophet, among the first people to be skilled in writing.'),
+  ProphetItem('🚢', 'Nabi Nuh A.S.', 'Prophet Nuh (A.S.)',
+      'Membina bahtera besar untuk selamatkan orang beriman daripada banjir besar.',
+      'Built a great ark to save the believers from a huge flood.'),
+  ProphetItem('🏜️', 'Nabi Hud A.S.', 'Prophet Hud (A.S.)',
+      'Diutus kepada kaum Aad, mengajak mereka sembah Allah sahaja.',
+      'Sent to the people of Aad, calling them to worship Allah alone.'),
+  ProphetItem('🐫', 'Nabi Soleh A.S.', 'Prophet Soleh (A.S.)',
+      'Diutus kepada kaum Thamud bersama mukjizat unta betina.',
+      'Sent to the people of Thamud with the miracle of a she-camel.'),
+  ProphetItem('🔥', 'Nabi Ibrahim A.S.', 'Prophet Ibrahim (A.S.)',
+      'Dilemparkan ke dalam api kerana imannya, tetapi Allah selamatkan dia — api jadi sejuk!',
+      'Thrown into a fire for his faith, but Allah saved him — the fire became cool!'),
+  ProphetItem('🌆', 'Nabi Lut A.S.', 'Prophet Lut (A.S.)',
+      'Mengajak kaumnya berhenti buat kejahatan dan kembali taat kepada Allah.',
+      'Called his people to stop wrongdoing and return to obeying Allah.'),
+  ProphetItem('🐏', 'Nabi Ismail A.S.', 'Prophet Ismail (A.S.)',
+      'Anak Nabi Ibrahim yang taat, sanggup dikorbankan demi mentaati Allah.',
+      'The obedient son of Prophet Ibrahim, willing to be sacrificed to obey Allah.'),
+  ProphetItem('🕋', 'Nabi Ishaq A.S.', 'Prophet Ishaq (A.S.)',
+      'Anak Nabi Ibrahim yang juga menjadi nabi dan ayah kepada Nabi Yaakub.',
+      'Son of Prophet Ibrahim who also became a prophet and father of Prophet Yaakub.'),
+  ProphetItem('👪', 'Nabi Yaakub A.S.', 'Prophet Yaakub (A.S.)',
+      'Ayah kepada 12 orang anak, termasuk Nabi Yusuf yang disayangi.',
+      'Father of 12 sons, including the beloved Prophet Yusuf.'),
+  ProphetItem('🌙', 'Nabi Yusuf A.S.', 'Prophet Yusuf (A.S.)',
+      'Terkenal dengan mimpi indah dan kesabarannya, akhirnya menjadi menteri di Mesir.',
+      'Famous for his beautiful dream and patience, he became a minister in Egypt.'),
+  ProphetItem('🩹', 'Nabi Ayub A.S.', 'Prophet Ayub (A.S.)',
+      'Diuji dengan sakit yang lama, tetapi tetap sabar dan tidak putus berdoa.',
+      'Tested with a long illness, yet remained patient and never stopped praying.'),
+  ProphetItem('🏘️', 'Nabi Syuaib A.S.', 'Prophet Syuaib (A.S.)',
+      'Mengajak kaumnya berlaku jujur dalam berniaga dan menyukat dengan adil.',
+      'Called his people to be honest in trade and to measure fairly.'),
+  ProphetItem('🌊', 'Nabi Musa A.S.', 'Prophet Musa (A.S.)',
+      'Diberi mukjizat tongkat yang boleh membelah laut untuk selamatkan kaumnya.',
+      'Given the miracle of a staff that could split the sea to save his people.'),
+  ProphetItem('🗣️', 'Nabi Harun A.S.', 'Prophet Harun (A.S.)',
+      'Abang Nabi Musa yang membantunya berdakwah kerana pandai bercakap.',
+      'Brother of Prophet Musa who helped him preach, as he was skilled in speech.'),
+  ProphetItem('🕌', 'Nabi Zulkifli A.S.', 'Prophet Zulkifli (A.S.)',
+      'Dikenali kerana kesabaran dan keadilannya memimpin kaumnya.',
+      'Known for his patience and fairness in leading his people.'),
+  ProphetItem('👑', 'Nabi Daud A.S.', 'Prophet Daud (A.S.)',
+      'Diberi suara merdu dan kitab Zabur, juga mengalahkan Jalut yang gagah.',
+      'Given a beautiful voice and the Zabur scripture, and he defeated the mighty Jalut.'),
+  ProphetItem('💍', 'Nabi Sulaiman A.S.', 'Prophet Sulaiman (A.S.)',
+      'Boleh bercakap dengan haiwan dan memerintah kerajaan yang sangat hebat.',
+      'Could speak with animals and ruled over a magnificent kingdom.'),
+  ProphetItem('⛰️', 'Nabi Ilyas A.S.', 'Prophet Ilyas (A.S.)',
+      'Mengajak kaumnya berhenti menyembah berhala dan kembali kepada Allah.',
+      'Called his people to stop idol worship and return to Allah.'),
+  ProphetItem('🤝', 'Nabi Ilyasa A.S.', 'Prophet Ilyasa (A.S.)',
+      'Meneruskan dakwah Nabi Ilyas dengan penuh kasih sayang.',
+      'Continued Prophet Ilyas\'s mission with great compassion.'),
+  ProphetItem('🐋', 'Nabi Yunus A.S.', 'Prophet Yunus (A.S.)',
+      'Ditelan ikan paus besar, lalu selamat kerana sentiasa berzikir kepada Allah.',
+      'Swallowed by a huge whale, and was saved because he kept remembering Allah.'),
+  ProphetItem('🙏', 'Nabi Zakaria A.S.', 'Prophet Zakaria (A.S.)',
+      'Berdoa lama untuk mendapat anak, dan Allah kurniakan Nabi Yahya.',
+      'Prayed for a long time for a child, and Allah blessed him with Prophet Yahya.'),
+  ProphetItem('📖', 'Nabi Yahya A.S.', 'Prophet Yahya (A.S.)',
+      'Sejak kecil sudah bersungguh-sungguh belajar dan beribadat kepada Allah.',
+      'Since childhood he was diligent in learning and worshipping Allah.'),
+  ProphetItem('✨', 'Nabi Isa A.S.', 'Prophet Isa (A.S.)',
+      'Dilahirkan tanpa bapa sebagai mukjizat, dan boleh bercakap sejak bayi.',
+      'Born without a father as a miracle, and could speak as a baby.'),
+  ProphetItem('🕌', 'Nabi Muhammad S.A.W.', 'Prophet Muhammad (S.A.W.)',
+      'Rasul terakhir dan penutup segala nabi, contoh akhlak terbaik untuk seluruh manusia.',
+      'The final messenger and seal of all prophets, the best example of character for all mankind.'),
+];
+
+// ============================================================ Panggil Nama Anak
+class NameOption {
+  final String label;
+  final String nameToSpeak;
+  const NameOption(this.label, this.nameToSpeak);
+}
+
+const List<NameOption> childNameOptions = [
+  NameOption('Adni', 'Adni'),
+  NameOption('Humaira', 'Humaira'),
+  NameOption('Adni Humaira', 'Adni Humaira'),
+  NameOption('Adni Humaira binti Ahmad Maliki', 'Adni Humaira binti Ahmad Maliki'),
+];
+
+class VoiceStyle {
+  final String emoji;
+  final String labelMs;
+  final String labelEn;
+  final double pitch;
+  final double rate;
+  const VoiceStyle(this.emoji, this.labelMs, this.labelEn, this.pitch, this.rate);
+}
+
+const List<VoiceStyle> voiceStyles = [
+  VoiceStyle('😊', 'Suara Lembut', 'Gentle Voice', 1.0, 0.42),
+  VoiceStyle('🎈', 'Suara Comel', 'Cute Voice', 1.5, 0.5),
+  VoiceStyle('🎉', 'Suara Ceria', 'Cheerful Voice', 1.25, 0.62),
+  VoiceStyle('🐢', 'Suara Perlahan', 'Slow Voice', 0.9, 0.3),
+];
+
+// ============================================================ Nama-nama 25 Rasul (kad nama)
+class ProphetNameItem {
+  final String emoji;
+  final String arabic;
+  final String nameMs;
+  final String nameEn;
+  const ProphetNameItem(this.emoji, this.arabic, this.nameMs, this.nameEn);
+}
+
+const List<ProphetNameItem> prophetNameItems = [
+  ProphetNameItem('👨', 'آدَم', 'Adam', 'Adam'),
+  ProphetNameItem('📜', 'إِدْرِيس', 'Idris', 'Idris'),
+  ProphetNameItem('🚢', 'نُوح', 'Nuh', 'Nuh'),
+  ProphetNameItem('🏜️', 'هُود', 'Hud', 'Hud'),
+  ProphetNameItem('🐫', 'صَالِح', 'Soleh', 'Soleh'),
+  ProphetNameItem('🔥', 'إِبْرَاهِيم', 'Ibrahim', 'Ibrahim'),
+  ProphetNameItem('🌆', 'لُوط', 'Lut', 'Lut'),
+  ProphetNameItem('🐏', 'إِسْمَاعِيل', 'Ismail', 'Ismail'),
+  ProphetNameItem('🕋', 'إِسْحَاق', 'Ishaq', 'Ishaq'),
+  ProphetNameItem('👪', 'يَعْقُوب', 'Yaakub', 'Yaakub'),
+  ProphetNameItem('🌙', 'يُوسُف', 'Yusuf', 'Yusuf'),
+  ProphetNameItem('🩹', 'أَيُّوب', 'Ayub', 'Ayub'),
+  ProphetNameItem('🏘️', 'شُعَيْب', 'Syuaib', 'Syuaib'),
+  ProphetNameItem('🌊', 'مُوسَى', 'Musa', 'Musa'),
+  ProphetNameItem('🗣️', 'هَارُون', 'Harun', 'Harun'),
+  ProphetNameItem('🕌', 'ذُو الْكِفْل', 'Zulkifli', 'Zulkifli'),
+  ProphetNameItem('👑', 'دَاوُد', 'Daud', 'Daud'),
+  ProphetNameItem('💍', 'سُلَيْمَان', 'Sulaiman', 'Sulaiman'),
+  ProphetNameItem('⛰️', 'إِلْيَاس', 'Ilyas', 'Ilyas'),
+  ProphetNameItem('🤝', 'اَلْيَسَع', 'Ilyasa', 'Ilyasa'),
+  ProphetNameItem('🐋', 'يُونُس', 'Yunus', 'Yunus'),
+  ProphetNameItem('🙏', 'زَكَرِيَّا', 'Zakaria', 'Zakaria'),
+  ProphetNameItem('📖', 'يَحْيَى', 'Yahya', 'Yahya'),
+  ProphetNameItem('✨', 'عِيسَى', 'Isa', 'Isa'),
+  ProphetNameItem('🕌', 'مُحَمَّد ﷺ', 'Muhammad', 'Muhammad'),
+];
+
+// ============================================================ 99 Nama Allah (Asmaul Husna)
+class AsmaulHusnaItem {
+  final int number;
+  final String arabic;
+  final String transliteration;
+  final String meaningMs;
+  final String meaningEn;
+  const AsmaulHusnaItem(this.number, this.arabic, this.transliteration,
+      this.meaningMs, this.meaningEn);
+}
+
+const List<AsmaulHusnaItem> asmaulHusnaItems = [
+  AsmaulHusnaItem(1, 'اَللّٰه', 'Allah', 'Nama Allah Yang Maha Esa', 'The One True God'),
+  AsmaulHusnaItem(2, 'اَلرَّحْمٰن', 'Ar-Rahman', 'Yang Maha Pemurah', 'The Most Compassionate'),
+  AsmaulHusnaItem(3, 'اَلرَّحِيْم', 'Ar-Rahim', 'Yang Maha Penyayang', 'The Most Merciful'),
+  AsmaulHusnaItem(4, 'اَلْمَلِك', 'Al-Malik', 'Yang Maha Merajai', 'The King and Owner of Dominion'),
+  AsmaulHusnaItem(5, 'اَلْقُدُّوْس', 'Al-Quddus', 'Yang Maha Suci', 'The Most Sacred'),
+  AsmaulHusnaItem(6, 'اَلسَّلَام', 'As-Salam', 'Yang Maha Sejahtera', 'The Source of Peace'),
+  AsmaulHusnaItem(7, 'اَلْمُؤْمِن', 'Al-Mu\'min', 'Yang Maha Memberi Keamanan', 'The Giver of Faith and Security'),
+  AsmaulHusnaItem(8, 'اَلْمُهَيْمِن', 'Al-Muhaimin', 'Yang Maha Memelihara', 'The Guardian and Protector'),
+  AsmaulHusnaItem(9, 'اَلْعَزِيْز', 'Al-Aziz', 'Yang Maha Gagah', 'The Almighty'),
+  AsmaulHusnaItem(10, 'اَلْجَبَّار', 'Al-Jabbar', 'Yang Maha Perkasa', 'The Compeller'),
+  AsmaulHusnaItem(11, 'اَلْمُتَكَبِّر', 'Al-Mutakabbir', 'Yang Maha Megah', 'The Supreme in Greatness'),
+  AsmaulHusnaItem(12, 'اَلْخَالِق', 'Al-Khaliq', 'Yang Maha Pencipta', 'The Creator'),
+  AsmaulHusnaItem(13, 'اَلْبَارِئ', 'Al-Bari\'', 'Yang Maha Menjadikan', 'The Maker'),
+  AsmaulHusnaItem(14, 'اَلْمُصَوِّر', 'Al-Musawwir', 'Yang Maha Membentuk Rupa', 'The Fashioner'),
+  AsmaulHusnaItem(15, 'اَلْغَفَّار', 'Al-Ghaffar', 'Yang Maha Pengampun', 'The Ever-Forgiving'),
+  AsmaulHusnaItem(16, 'اَلْقَهَّار', 'Al-Qahhar', 'Yang Maha Perkasa', 'The Subduer'),
+  AsmaulHusnaItem(17, 'اَلْوَهَّاب', 'Al-Wahhab', 'Yang Maha Pemberi', 'The Bestower'),
+  AsmaulHusnaItem(18, 'اَلرَّزَّاق', 'Ar-Razzaq', 'Yang Maha Pemberi Rezeki', 'The Provider'),
+  AsmaulHusnaItem(19, 'اَلْفَتَّاح', 'Al-Fattah', 'Yang Maha Pembuka Pintu Rahmat', 'The Opener'),
+  AsmaulHusnaItem(20, 'اَلْعَلِيْم', 'Al-\'Alim', 'Yang Maha Mengetahui', 'The All-Knowing'),
+  AsmaulHusnaItem(21, 'اَلْقَابِض', 'Al-Qabid', 'Yang Maha Penyempit Rezeki', 'The Restrainer'),
+  AsmaulHusnaItem(22, 'اَلْبَاسِط', 'Al-Basit', 'Yang Maha Melapangkan Rezeki', 'The Extender'),
+  AsmaulHusnaItem(23, 'اَلْخَافِض', 'Al-Khafid', 'Yang Maha Merendahkan', 'The Reducer'),
+  AsmaulHusnaItem(24, 'اَلرَّافِع', 'Ar-Rafi\'', 'Yang Maha Meninggikan', 'The Exalter'),
+  AsmaulHusnaItem(25, 'اَلْمُعِزّ', 'Al-Mu\'izz', 'Yang Maha Memberi Kemuliaan', 'The Bestower of Honour'),
+  AsmaulHusnaItem(26, 'اَلْمُذِلّ', 'Al-Muzill', 'Yang Maha Menghinakan', 'The Humiliator'),
+  AsmaulHusnaItem(27, 'اَلسَّمِيْع', 'As-Sami\'', 'Yang Maha Mendengar', 'The All-Hearing'),
+  AsmaulHusnaItem(28, 'اَلْبَصِيْر', 'Al-Basir', 'Yang Maha Melihat', 'The All-Seeing'),
+  AsmaulHusnaItem(29, 'اَلْحَكَم', 'Al-Hakam', 'Yang Maha Menghukum', 'The Judge'),
+  AsmaulHusnaItem(30, 'اَلْعَدْل', 'Al-\'Adl', 'Yang Maha Adil', 'The Utterly Just'),
+  AsmaulHusnaItem(31, 'اَللَّطِيْف', 'Al-Latif', 'Yang Maha Lembut', 'The Most Subtle and Gentle'),
+  AsmaulHusnaItem(32, 'اَلْخَبِيْر', 'Al-Khabir', 'Yang Maha Mengetahui Perkara Ghaib', 'The All-Aware'),
+  AsmaulHusnaItem(33, 'اَلْحَلِيْم', 'Al-Halim', 'Yang Maha Penyabar', 'The Most Forbearing'),
+  AsmaulHusnaItem(34, 'اَلْعَظِيْم', 'Al-\'Azim', 'Yang Maha Agung', 'The Magnificent'),
+  AsmaulHusnaItem(35, 'اَلْغَفُوْر', 'Al-Ghafur', 'Yang Maha Pengampun', 'The Great Forgiver'),
+  AsmaulHusnaItem(36, 'اَلشَّكُوْر', 'Asy-Syakur', 'Yang Maha Berterima Kasih', 'The Most Appreciative'),
+  AsmaulHusnaItem(37, 'اَلْعَلِيّ', 'Al-\'Aliyy', 'Yang Maha Tinggi', 'The Most High'),
+  AsmaulHusnaItem(38, 'اَلْكَبِيْر', 'Al-Kabir', 'Yang Maha Besar', 'The Most Great'),
+  AsmaulHusnaItem(39, 'اَلْحَفِيْظ', 'Al-Hafiz', 'Yang Maha Memelihara', 'The Preserver'),
+  AsmaulHusnaItem(40, 'اَلْمُقِيْت', 'Al-Muqit', 'Yang Maha Pemberi Kecukupan', 'The Sustainer'),
+  AsmaulHusnaItem(41, 'اَلْحَسِيْب', 'Al-Hasib', 'Yang Maha Membuat Perhitungan', 'The Reckoner'),
+  AsmaulHusnaItem(42, 'اَلْجَلِيْل', 'Al-Jalil', 'Yang Maha Mulia', 'The Majestic'),
+  AsmaulHusnaItem(43, 'اَلْكَرِيْم', 'Al-Karim', 'Yang Maha Pemurah', 'The Most Generous'),
+  AsmaulHusnaItem(44, 'اَلرَّقِيْب', 'Ar-Raqib', 'Yang Maha Mengawasi', 'The Watchful'),
+  AsmaulHusnaItem(45, 'اَلْمُجِيْب', 'Al-Mujib', 'Yang Maha Memperkenankan', 'The Responsive One'),
+  AsmaulHusnaItem(46, 'اَلْوَاسِع', 'Al-Wasi\'', 'Yang Maha Luas', 'The All-Encompassing'),
+  AsmaulHusnaItem(47, 'اَلْحَكِيْم', 'Al-Hakim', 'Yang Maha Bijaksana', 'The All-Wise'),
+  AsmaulHusnaItem(48, 'اَلْوَدُوْد', 'Al-Wadud', 'Yang Maha Mengasihi', 'The Most Loving'),
+  AsmaulHusnaItem(49, 'اَلْمَجِيْد', 'Al-Majid', 'Yang Maha Mulia', 'The Most Glorious'),
+  AsmaulHusnaItem(50, 'اَلْبَاعِث', 'Al-Ba\'ith', 'Yang Maha Membangkitkan', 'The Resurrector'),
+  AsmaulHusnaItem(51, 'اَلشَّهِيْد', 'Asy-Syahid', 'Yang Maha Menyaksikan', 'The Witness'),
+  AsmaulHusnaItem(52, 'اَلْحَقّ', 'Al-Haqq', 'Yang Maha Benar', 'The Absolute Truth'),
+  AsmaulHusnaItem(53, 'اَلْوَكِيْل', 'Al-Wakil', 'Yang Maha Pentadbir', 'The Trustee'),
+  AsmaulHusnaItem(54, 'اَلْقَوِيّ', 'Al-Qawiyy', 'Yang Maha Kuat', 'The All-Strong'),
+  AsmaulHusnaItem(55, 'اَلْمَتِيْن', 'Al-Matin', 'Yang Maha Kukuh', 'The Firm One'),
+  AsmaulHusnaItem(56, 'اَلْوَلِيّ', 'Al-Waliyy', 'Yang Maha Melindungi', 'The Protecting Friend'),
+  AsmaulHusnaItem(57, 'اَلْحَمِيْد', 'Al-Hamid', 'Yang Maha Terpuji', 'The Praiseworthy'),
+  AsmaulHusnaItem(58, 'اَلْمُحْصِي', 'Al-Muhsi', 'Yang Maha Menghitung', 'The All-Enumerating'),
+  AsmaulHusnaItem(59, 'اَلْمُبْدِئ', 'Al-Mubdi\'', 'Yang Maha Memulakan', 'The Originator'),
+  AsmaulHusnaItem(60, 'اَلْمُعِيْد', 'Al-Mu\'id', 'Yang Maha Mengembalikan', 'The Restorer'),
+  AsmaulHusnaItem(61, 'اَلْمُحْيِي', 'Al-Muhyi', 'Yang Maha Menghidupkan', 'The Giver of Life'),
+  AsmaulHusnaItem(62, 'اَلْمُمِيْت', 'Al-Mumit', 'Yang Maha Mematikan', 'The Bringer of Death'),
+  AsmaulHusnaItem(63, 'اَلْحَيّ', 'Al-Hayy', 'Yang Maha Hidup', 'The Ever-Living'),
+  AsmaulHusnaItem(64, 'اَلْقَيُّوْم', 'Al-Qayyum', 'Yang Maha Berdiri Sendiri', 'The Self-Subsisting'),
+  AsmaulHusnaItem(65, 'اَلْوَاجِد', 'Al-Wajid', 'Yang Maha Kaya', 'The Perceiver'),
+  AsmaulHusnaItem(66, 'اَلْمَاجِد', 'Al-Majid', 'Yang Maha Mulia', 'The Illustrious'),
+  AsmaulHusnaItem(67, 'اَلْوَاحِد', 'Al-Wahid', 'Yang Maha Esa', 'The One'),
+  AsmaulHusnaItem(68, 'اَلْأَحَد', 'Al-Ahad', 'Yang Maha Tunggal', 'The Unique One'),
+  AsmaulHusnaItem(69, 'اَلصَّمَد', 'As-Samad', 'Yang Menjadi Tumpuan', 'The Eternal Refuge'),
+  AsmaulHusnaItem(70, 'اَلْقَادِر', 'Al-Qadir', 'Yang Maha Berkuasa', 'The All-Powerful'),
+  AsmaulHusnaItem(71, 'اَلْمُقْتَدِر', 'Al-Muqtadir', 'Yang Maha Berkuasa', 'The All-Determiner'),
+  AsmaulHusnaItem(72, 'اَلْمُقَدِّم', 'Al-Muqaddim', 'Yang Maha Mendahulukan', 'The Expediter'),
+  AsmaulHusnaItem(73, 'اَلْمُؤَخِّر', 'Al-Mu\'akhkhir', 'Yang Maha Melambatkan', 'The Delayer'),
+  AsmaulHusnaItem(74, 'اَلْأَوَّل', 'Al-Awwal', 'Yang Maha Awal', 'The First'),
+  AsmaulHusnaItem(75, 'اَلْآخِر', 'Al-Akhir', 'Yang Maha Akhir', 'The Last'),
+  AsmaulHusnaItem(76, 'اَلظَّاهِر', 'Az-Zahir', 'Yang Maha Nyata', 'The Manifest'),
+  AsmaulHusnaItem(77, 'اَلْبَاطِن', 'Al-Batin', 'Yang Maha Ghaib', 'The Hidden'),
+  AsmaulHusnaItem(78, 'اَلْوَالِي', 'Al-Wali', 'Yang Maha Memerintah', 'The Governor'),
+  AsmaulHusnaItem(79, 'اَلْمُتَعَالِي', 'Al-Muta\'ali', 'Yang Maha Tinggi', 'The Most Exalted'),
+  AsmaulHusnaItem(80, 'اَلْبَرّ', 'Al-Barr', 'Yang Maha Melimpahkan Kebajikan', 'The Source of All Goodness'),
+  AsmaulHusnaItem(81, 'اَلتَّوَّاب', 'At-Tawwab', 'Yang Maha Penerima Taubat', 'The Ever-Accepting of Repentance'),
+  AsmaulHusnaItem(82, 'اَلْمُنْتَقِم', 'Al-Muntaqim', 'Yang Maha Pemberi Balasan', 'The Avenger'),
+  AsmaulHusnaItem(83, 'اَلْعَفُوّ', 'Al-\'Afuww', 'Yang Maha Pemaaf', 'The Pardoner'),
+  AsmaulHusnaItem(84, 'اَلرَّؤُوْف', 'Ar-Ra\'uf', 'Yang Maha Pengasih', 'The Most Kind'),
+  AsmaulHusnaItem(85, 'مَالِكُ الْمُلْك', 'Malik-ul-Mulk', 'Pemilik Segala Kerajaan', 'The Owner of All Sovereignty'),
+  AsmaulHusnaItem(86, 'ذُو الْجَلَالِ وَالْإِكْرَام', 'Zul-Jalali wal-Ikram', 'Yang Maha Memiliki Kebesaran & Kemuliaan', 'Lord of Majesty and Generosity'),
+  AsmaulHusnaItem(87, 'اَلْمُقْسِط', 'Al-Muqsit', 'Yang Maha Adil', 'The Equitable One'),
+  AsmaulHusnaItem(88, 'اَلْجَامِع', 'Al-Jami\'', 'Yang Maha Mengumpulkan', 'The Gatherer'),
+  AsmaulHusnaItem(89, 'اَلْغَنِيّ', 'Al-Ghaniyy', 'Yang Maha Kaya', 'The Self-Sufficient'),
+  AsmaulHusnaItem(90, 'اَلْمُغْنِي', 'Al-Mughni', 'Yang Maha Memberi Kekayaan', 'The Enricher'),
+  AsmaulHusnaItem(91, 'اَلْمَانِع', 'Al-Mani\'', 'Yang Maha Mencegah', 'The Preventer'),
+  AsmaulHusnaItem(92, 'اَلضَّار', 'Ad-Darr', 'Yang Menimpakan Kemudaratan', 'The Distresser'),
+  AsmaulHusnaItem(93, 'اَلنَّافِع', 'An-Nafi\'', 'Yang Memberi Manfaat', 'The Propitious'),
+  AsmaulHusnaItem(94, 'اَلنُّوْر', 'An-Nur', 'Yang Maha Bercahaya', 'The Light'),
+  AsmaulHusnaItem(95, 'اَلْهَادِي', 'Al-Hadi', 'Yang Maha Pemberi Petunjuk', 'The Guide'),
+  AsmaulHusnaItem(96, 'اَلْبَدِيْع', 'Al-Badi\'', 'Yang Maha Pencipta Tanpa Contoh', 'The Incomparable Originator'),
+  AsmaulHusnaItem(97, 'اَلْبَاقِي', 'Al-Baqi', 'Yang Maha Kekal', 'The Everlasting'),
+  AsmaulHusnaItem(98, 'اَلْوَارِث', 'Al-Warith', 'Yang Maha Mewarisi', 'The Ultimate Inheritor'),
+  AsmaulHusnaItem(99, 'اَلصَّبُوْر', 'As-Sabur', 'Yang Maha Penyabar', 'The Most Patient'),
+];

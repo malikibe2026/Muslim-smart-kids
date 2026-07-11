@@ -23,6 +23,18 @@ final List<_ModuleInfo> _modules = [
   _ModuleInfo('hijaiyah', '🕌', 'Hijaiyah', 'Hijaiyah', hijaiyahItems.length),
   _ModuleInfo('doa', '🤲', 'Doa Harian', 'Daily Duas', doaItems.length),
   _ModuleInfo('rukun', '🕋', 'Rukun Islam', 'Pillars of Islam', rukunItems.length),
+  _ModuleInfo('kebesaran', '🌍', 'Kebesaran Allah', "Allah's Greatness",
+      kebesaranItems.length),
+  _ModuleInfo('prophets', '📖', 'Kisah 25 Rasul', 'Stories of 25 Prophets',
+      prophetItems.length),
+  _ModuleInfo('prophet_names', '🧕', 'Nama-nama Rasul', 'Names of Prophets',
+      prophetNameItems.length),
+  _ModuleInfo('asmaul_husna', '☪️', '99 Nama Allah', '99 Names of Allah',
+      asmaulHusnaItems.length),
+  _ModuleInfo('rhymes', '🎵', 'Lagu Kanak-kanak', 'Nursery Rhymes',
+      rhymeItems.length),
+  _ModuleInfo('bodyparts', '🧍', 'Anggota Badan', 'Body Parts',
+      bodyPartItems.length),
 ];
 
 class RewardsScreen extends StatelessWidget {
@@ -49,6 +61,7 @@ class RewardsScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color(0xFFFFF3B0),
                   borderRadius: BorderRadius.circular(28),
+                  boxShadow: AppTheme.softShadow(),
                 ),
                 child: Column(
                   children: [

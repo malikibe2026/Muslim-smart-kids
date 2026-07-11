@@ -65,4 +65,26 @@ class AudioService {
 
   /// Sebutan Arab (huruf hijaiyah & doa).
   Future<void> speakArabic(String text) => speak(text, lang: 'ar');
+
+  /// Sebut teks dengan gaya suara (pic/rate) tersendiri, contohnya untuk
+  /// memanggil nama anak dengan pelbagai gaya suara comel.
+  /// Tetapan asal (pitch 1.1, rate 0.45) dikembalikan selepas selesai.
+  Future<void> speakStyled(String text,
+      {required double pitch, required double rate, String? lang}) async {
+    if (!AppSettings.instance.soundOn) return;
+    try {
+      await _tts.stop();
+      await _tts.setLanguage(
+        lang ?? (AppSettings.instance.isMs ? 'ms-MY' : 'en-US'),
+      );
+      await _tts.setPitch(pitch);
+      await _tts.setSpeechRate(rate);
+      await _tts.speak(text);
+    } catch (_) {
+    } finally {
+      // Kembalikan tetapan asal untuk modul lain.
+      await _tts.setPitch(1.1);
+      await _tts.setSpeechRate(0.45);
+    }
+  }
 }

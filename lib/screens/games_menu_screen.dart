@@ -49,6 +49,8 @@ class GamesMenuScreen extends StatelessWidget {
           emoji: games[i].emoji,
           label: games[i].label,
           color: AppTheme.cardColors[i % AppTheme.cardColors.length],
+          deepColor:
+              AppTheme.cardColorsDeep[i % AppTheme.cardColorsDeep.length],
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(

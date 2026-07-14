@@ -761,3 +761,252 @@ const List<AsmaulHusnaItem> asmaulHusnaItems = [
   AsmaulHusnaItem(98, 'اَلْوَارِث', 'Al-Warith', 'Yang Maha Mewarisi', 'The Ultimate Inheritor'),
   AsmaulHusnaItem(99, 'اَلصَّبُوْر', 'As-Sabur', 'Yang Maha Penyabar', 'The Most Patient'),
 ];
+
+// ============================================================ Buah & Sayur
+const List<AnimalItem> fruitItems = [
+  AnimalItem('🍎', 'Epal', 'Apple', 'Epal merah manis'),
+  AnimalItem('🍌', 'Pisang', 'Banana', 'Pisang kuning'),
+  AnimalItem('🍊', 'Oren', 'Orange', 'Oren berair'),
+  AnimalItem('🍉', 'Tembikai', 'Watermelon', 'Tembikai merah'),
+  AnimalItem('🍇', 'Anggur', 'Grapes', 'Anggur ungu'),
+  AnimalItem('🥭', 'Mangga', 'Mango', 'Mangga manis'),
+  AnimalItem('🍍', 'Nanas', 'Pineapple', 'Nanas masam manis'),
+  AnimalItem('🥕', 'Lobak Merah', 'Carrot', 'Lobak merah rangup'),
+  AnimalItem('🌽', 'Jagung', 'Corn', 'Jagung kuning manis'),
+  AnimalItem('🍅', 'Tomato', 'Tomato', 'Tomato merah bulat'),
+  AnimalItem('🥒', 'Timun', 'Cucumber', 'Timun hijau sejuk'),
+  AnimalItem('🥬', 'Sayur Hijau', 'Leafy Greens', 'Sayur hijau sihat'),
+];
+
+// ============================================================ Kenderaan
+const List<AnimalItem> vehicleItems = [
+  AnimalItem('🚗', 'Kereta', 'Car', 'Vroom vroom!'),
+  AnimalItem('🚌', 'Bas', 'Bus', 'Bas besar'),
+  AnimalItem('🚂', 'Kereta Api', 'Train', 'Choo choo!'),
+  AnimalItem('✈️', 'Kapal Terbang', 'Aeroplane', 'Terbang tinggi!'),
+  AnimalItem('🚁', 'Helikopter', 'Helicopter', 'Berpusing-pusing!'),
+  AnimalItem('🚢', 'Kapal', 'Ship', 'Belayar di laut'),
+  AnimalItem('🏍️', 'Motosikal', 'Motorcycle', 'Vroom laju!'),
+  AnimalItem('🚲', 'Basikal', 'Bicycle', 'Kring kring!'),
+  AnimalItem('🚑', 'Ambulans', 'Ambulance', 'Wiu wiu wiu!'),
+  AnimalItem('🚒', 'Bomba', 'Fire Engine', 'Wiu wiu! Bomba datang!'),
+  AnimalItem('🚜', 'Traktor', 'Tractor', 'Traktor di sawah'),
+  AnimalItem('🚀', 'Roket', 'Rocket', 'Ke angkasa lepas!'),
+];
+
+// ============================================================ Lawan Kata
+class OppositeItem {
+  final String emoji1;
+  final String emoji2;
+  final String ms1;
+  final String ms2;
+  final String en1;
+  final String en2;
+  const OppositeItem(this.emoji1, this.emoji2, this.ms1, this.ms2, this.en1, this.en2);
+}
+
+const List<OppositeItem> oppositeItems = [
+  OppositeItem('🐘', '🐭', 'Besar', 'Kecil', 'Big', 'Small'),
+  OppositeItem('🔥', '🧊', 'Panas', 'Sejuk', 'Hot', 'Cold'),
+  OppositeItem('🦒', '🐢', 'Tinggi', 'Rendah', 'Tall', 'Short'),
+  OppositeItem('🌞', '🌙', 'Siang', 'Malam', 'Day', 'Night'),
+  OppositeItem('😊', '😢', 'Gembira', 'Sedih', 'Happy', 'Sad'),
+  OppositeItem('⬆️', '⬇️', 'Atas', 'Bawah', 'Up', 'Down'),
+  OppositeItem('🐇', '🐌', 'Laju', 'Perlahan', 'Fast', 'Slow'),
+  OppositeItem('💪', '🍃', 'Kuat', 'Lemah', 'Strong', 'Weak'),
+  OppositeItem('📖', '📕', 'Buka', 'Tutup', 'Open', 'Close'),
+  OppositeItem('🌊', '🏜️', 'Basah', 'Kering', 'Wet', 'Dry'),
+];
+
+// ============================================================ Ahli Keluarga
+const List<AnimalItem> familyItems = [
+  AnimalItem('👨', 'Ayah', 'Father', 'Ayah yang penyayang'),
+  AnimalItem('👩', 'Ibu', 'Mother', 'Ibu yang penyayang'),
+  AnimalItem('👶', 'Adik', 'Baby', 'Adik comel'),
+  AnimalItem('👦', 'Abang', 'Brother', 'Abang yang baik'),
+  AnimalItem('👧', 'Kakak', 'Sister', 'Kakak yang baik'),
+  AnimalItem('👴', 'Atuk', 'Grandfather', 'Atuk tersayang'),
+  AnimalItem('👵', 'Nenek', 'Grandmother', 'Nenek tersayang'),
+  AnimalItem('👨‍🦱', 'Pak Cik', 'Uncle', 'Pak cik mesra'),
+  AnimalItem('👩‍🦱', 'Mak Cik', 'Aunt', 'Mak cik mesra'),
+  AnimalItem('🧒', 'Sepupu', 'Cousin', 'Kawan main bersama'),
+];
+
+// ============================================================ Cuaca & Hari
+const List<AnimalItem> weatherItems = [
+  AnimalItem('☀️', 'Cerah', 'Sunny', 'Hari yang cerah'),
+  AnimalItem('☁️', 'Mendung', 'Cloudy', 'Awan tebal'),
+  AnimalItem('🌧️', 'Hujan', 'Rainy', 'Hujan turun'),
+  AnimalItem('⛈️', 'Ribut Petir', 'Thunderstorm', 'Guruh berdentum'),
+  AnimalItem('🌈', 'Pelangi', 'Rainbow', 'Pelangi cantik'),
+  AnimalItem('🌬️', 'Berangin', 'Windy', 'Angin bertiup'),
+];
+
+const List<String> daysMs = ['Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu', 'Ahad'];
+const List<String> daysEn = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+// ============================================================ Bunyi Seronok (bayi)
+const List<AnimalItem> babySoundItems = [
+  AnimalItem('📱', 'Telefon', 'Phone', 'Kring kring kring!'),
+  AnimalItem('🔔', 'Loceng', 'Bell', 'Ting ting ting!'),
+  AnimalItem('🥁', 'Dram', 'Drum', 'Dum dum dum!'),
+  AnimalItem('🎺', 'Trompet', 'Trumpet', 'Tet tet tet!'),
+  AnimalItem('⏰', 'Jam Loceng', 'Alarm Clock', 'Riiiing!'),
+  AnimalItem('🚗', 'Kereta', 'Car', 'Vroom vroom!'),
+  AnimalItem('🐱', 'Kucing', 'Cat', 'Meow meow!'),
+  AnimalItem('🐶', 'Anjing', 'Dog', 'Woof woof!'),
+  AnimalItem('🐄', 'Lembu', 'Cow', 'Moo moo!'),
+  AnimalItem('🦆', 'Itik', 'Duck', 'Kwek kwek kwek!'),
+  AnimalItem('🚂', 'Kereta Api', 'Train', 'Choo choo!'),
+  AnimalItem('💧', 'Air', 'Water', 'Titik titik titik!'),
+];
+
+// ============================================================ Muzik Tidur (loop)
+class LoopSound {
+  final String id;
+  final String emoji;
+  final String labelMs;
+  final String labelEn;
+  const LoopSound(this.id, this.emoji, this.labelMs, this.labelEn);
+}
+
+const List<LoopSound> loopSounds = [
+  LoopSound('lullaby', '🎵', 'Lagu Tidur', 'Lullaby'),
+  LoopSound('rain', '🌧️', 'Bunyi Hujan', 'Rain Sounds'),
+  LoopSound('waves', '🌊', 'Ombak Laut', 'Ocean Waves'),
+  LoopSound('heartbeat', '💗', 'Degupan Jantung', 'Heartbeat'),
+];
+
+// ============================================================ Langkah Solat
+class StepItem {
+  final String emoji;
+  final String titleMs;
+  final String titleEn;
+  final String descMs;
+  final String descEn;
+  const StepItem(this.emoji, this.titleMs, this.titleEn, this.descMs, this.descEn);
+}
+
+const List<StepItem> solatSteps = [
+  StepItem('🧎', 'Niat', 'Intention', 'Berdiri tegak dan berniat dalam hati untuk solat kerana Allah.', 'Stand straight and make the intention in your heart to pray for Allah.'),
+  StepItem('🙌', 'Takbiratul Ihram', 'Opening Takbir', 'Angkat kedua tangan dan sebut "Allahu Akbar".', 'Raise both hands and say "Allahu Akbar".'),
+  StepItem('🧍', 'Berdiri & Baca Al-Fatihah', 'Standing & Recite Al-Fatihah', 'Letak tangan di dada dan baca surah Al-Fatihah.', 'Place your hands on your chest and recite Surah Al-Fatihah.'),
+  StepItem('🙇', 'Rukuk', 'Bowing (Ruku)', 'Bongkokkan badan, tangan pegang lutut, sebut "Subhana Rabbiyal Azim".', 'Bow down with hands on knees, say "Subhana Rabbiyal Azim".'),
+  StepItem('🧍', 'Iktidal', 'Standing Up', 'Bangun semula berdiri tegak sambil sebut "Sami\'allahu liman hamidah".', 'Stand back up straight, saying "Sami\'allahu liman hamidah".'),
+  StepItem('🛐', 'Sujud', 'Prostration (Sujud)', 'Sujud dengan dahi ke lantai, sebut "Subhana Rabbiyal A\'la".', 'Prostrate with your forehead on the floor, say "Subhana Rabbiyal A\'la".'),
+  StepItem('🧎', 'Duduk Antara Dua Sujud', 'Sitting Between Sujud', 'Duduk sebentar dan mohon keampunan "Rabbighfirli".', 'Sit briefly and ask forgiveness "Rabbighfirli".'),
+  StepItem('🛐', 'Sujud Kedua', 'Second Sujud', 'Sujud sekali lagi seperti tadi.', 'Prostrate once more as before.'),
+  StepItem('🧎', 'Tahiyat Akhir', 'Final Tashahhud', 'Duduk dan baca tahiyat akhir dengan tenang.', 'Sit and recite the final tashahhud calmly.'),
+  StepItem('🤲', 'Salam', 'Salam', 'Toleh ke kanan dan kiri sambil sebut "Assalamualaikum warahmatullah".', 'Turn your head right then left, saying "Assalamualaikum warahmatullah".'),
+];
+
+const List<StepItem> wudhuSteps = [
+  StepItem('🤲', 'Niat & Bismillah', 'Intention & Bismillah', 'Baca "Bismillah" dan berniat mengambil wudhu.', 'Say "Bismillah" and make the intention for wudhu.'),
+  StepItem('🤚', 'Basuh Tangan', 'Wash Hands', 'Basuh kedua tapak tangan hingga pergelangan 3 kali.', 'Wash both hands up to the wrists 3 times.'),
+  StepItem('👄', 'Berkumur', 'Rinse Mouth', 'Berkumur-kumur dengan air 3 kali.', 'Rinse your mouth with water 3 times.'),
+  StepItem('👃', 'Basuh Hidung', 'Rinse Nose', 'Masukkan air ke hidung dan hembuskan 3 kali.', 'Sniff water into the nose and blow it out 3 times.'),
+  StepItem('😊', 'Basuh Muka', 'Wash Face', 'Basuh seluruh muka 3 kali.', 'Wash the whole face 3 times.'),
+  StepItem('💪', 'Basuh Tangan ke Siku', 'Wash Arms', 'Basuh tangan kanan lalu kiri hingga siku 3 kali.', 'Wash the right arm then left arm up to the elbows 3 times.'),
+  StepItem('💆', 'Sapu Kepala', 'Wipe Head', 'Sapu air di atas kepala sekali.', 'Wipe your head with wet hands once.'),
+  StepItem('👂', 'Sapu Telinga', 'Wipe Ears', 'Sapu kedua telinga dengan jari yang basah.', 'Wipe both ears with wet fingers.'),
+  StepItem('🦶', 'Basuh Kaki', 'Wash Feet', 'Basuh kaki kanan lalu kiri hingga buku lali 3 kali.', 'Wash the right foot then left foot up to the ankles 3 times.'),
+];
+
+// ============================================================ Adab Harian
+const List<StepItem> adabItems = [
+  StepItem('👋', 'Beri Salam', 'Give Salam', 'Ucap "Assalamualaikum" bila jumpa orang.', 'Say "Assalamualaikum" when you meet someone.'),
+  StepItem('🍽️', 'Baca Bismillah Sebelum Makan', 'Bismillah Before Eating', 'Sebut "Bismillah" sebelum mula makan.', 'Say "Bismillah" before you start eating.'),
+  StepItem('🤚', 'Makan Guna Tangan Kanan', 'Eat With Right Hand', 'Gunakan tangan kanan untuk makan dan minum.', 'Use your right hand to eat and drink.'),
+  StepItem('🧼', 'Cuci Tangan', 'Wash Hands', 'Cuci tangan sebelum dan selepas makan.', 'Wash your hands before and after eating.'),
+  StepItem('🙏', 'Ucap Terima Kasih', 'Say Thank You', 'Ucap "Terima kasih" bila orang tolong kita.', 'Say "Thank you" when someone helps you.'),
+  StepItem('👨‍👩‍👧', 'Hormat Ibu Bapa', 'Respect Parents', 'Dengar cakap ibu dan ayah, cium tangan mereka.', 'Listen to your parents and kiss their hands.'),
+  StepItem('🧸', 'Kongsi Mainan', 'Share Toys', 'Kongsi mainan dengan adik dan kawan-kawan.', 'Share your toys with siblings and friends.'),
+  StepItem('😊', 'Sentiasa Senyum', 'Always Smile', 'Senyum itu sedekah! Senyum kepada semua orang.', 'Smiling is charity! Smile at everyone.'),
+  StepItem('🤝', 'Tolong Kawan', 'Help Friends', 'Bantu kawan yang memerlukan pertolongan.', 'Help friends who need assistance.'),
+  StepItem('🗑️', 'Jaga Kebersihan', 'Keep Clean', 'Buang sampah ke dalam tong sampah.', 'Throw rubbish into the bin.'),
+];
+
+// ============================================================ Surah Pendek
+class SurahItem {
+  final String id;
+  final String nameArabic;
+  final String nameMs;
+  final String arabic;
+  final String rumi;
+  final String meaningMs;
+  final String meaningEn;
+  const SurahItem(this.id, this.nameArabic, this.nameMs, this.arabic, this.rumi, this.meaningMs, this.meaningEn);
+}
+
+const List<SurahItem> surahItems = [
+  SurahItem(
+    'fatihah',
+    'الفاتحة',
+    'Al-Fatihah (Pembukaan)',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿١﴾ ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ ﴿٢﴾ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿٣﴾ مَٰلِكِ يَوۡمِ ٱلدِّينِ ﴿٤﴾ إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ ﴿٥﴾ ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ ﴿٦﴾ صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ ﴿٧﴾',
+    'Bismillahir-rahmanir-rahim. Alhamdulillahi rabbil-\'alamin. Ar-rahmanir-rahim. Maliki yaumid-din. Iyyaka na\'budu wa iyyaka nasta\'in. Ihdinas-siratal-mustaqim. Siratal-lazina an\'amta \'alaihim ghairil-maghdubi \'alaihim wa lad-dallin.',
+    'Surah pembukaan Al-Quran. Kita memuji Allah dan memohon petunjuk jalan yang lurus. Dibaca dalam setiap rakaat solat.',
+    'The opening chapter of the Quran. We praise Allah and ask for guidance on the straight path. Recited in every unit of prayer.',
+  ),
+  SurahItem(
+    'ikhlas',
+    'الإخلاص',
+    'Al-Ikhlas (Ikhlas)',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ۝ قُلۡ هُوَ ٱللَّهُ أَحَدٌ ﴿١﴾ ٱللَّهُ ٱلصَّمَدُ ﴿٢﴾ لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ ﴿٣﴾ وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ ﴿٤﴾',
+    'Qul huwallahu ahad. Allahus-samad. Lam yalid wa lam yulad. Wa lam yakul-lahu kufuwan ahad.',
+    'Allah itu Maha Esa. Allah tempat kita bergantung. Dia tidak beranak dan tidak diperanakkan. Tiada sesiapa yang setara dengan-Nya.',
+    'Allah is One. Allah is the Eternal Refuge. He neither begets nor is born. There is none comparable to Him.',
+  ),
+  SurahItem(
+    'falaq',
+    'الفلق',
+    'Al-Falaq (Subuh)',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ۝ قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ ﴿١﴾ مِن شَرِّ مَا خَلَقَ ﴿٢﴾ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ﴿٣﴾ وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ ﴿٤﴾ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴿٥﴾',
+    'Qul a\'uzu birabbil-falaq. Min syarri ma khalaq. Wa min syarri ghasiqin iza waqab. Wa min syarrin-naffasati fil-\'uqad. Wa min syarri hasidin iza hasad.',
+    'Kita mohon perlindungan Allah daripada segala kejahatan. Baca surah ini sebelum tidur untuk perlindungan.',
+    'We seek Allah\'s protection from all evil. Recite this surah before sleeping for protection.',
+  ),
+  SurahItem(
+    'nas',
+    'الناس',
+    'An-Nas (Manusia)',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ۝ قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ﴿١﴾ مَلِكِ ٱلنَّاسِ ﴿٢﴾ إِلَٰهِ ٱلنَّاسِ ﴿٣﴾ مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ ﴿٤﴾ ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ ﴿٥﴾ مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ ﴿٦﴾',
+    'Qul a\'uzu birabbin-nas. Malikin-nas. Ilahin-nas. Min syarril-waswasil-khannas. Allazi yuwaswisu fi sudurin-nas. Minal-jinnati wan-nas.',
+    'Kita mohon perlindungan Allah daripada bisikan jahat. Baca bersama Al-Falaq sebelum tidur.',
+    'We seek Allah\'s protection from evil whispers. Recite together with Al-Falaq before sleeping.',
+  ),
+  SurahItem(
+    'kauthar',
+    'الكوثر',
+    'Al-Kauthar (Nikmat Banyak)',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ۝ إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ ﴿١﴾ فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ ﴿٢﴾ إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ ﴿٣﴾',
+    'Inna a\'tainakal-kauthar. Fasalli lirabbika wanhar. Inna syani\'aka huwal-abtar.',
+    'Surah paling pendek dalam Al-Quran. Allah beri Nabi Muhammad nikmat yang banyak, maka solat dan bersyukurlah.',
+    'The shortest surah in the Quran. Allah gave Prophet Muhammad abundant blessings, so pray and be grateful.',
+  ),
+  SurahItem(
+    'asr',
+    'العصر',
+    'Al-Asr (Masa)',
+    'بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ۝ وَٱلۡعَصۡرِ ﴿١﴾ إِنَّ ٱلۡإِنسَٰنَ لَفِي خُسۡرٍ ﴿٢﴾ إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ ﴿٣﴾',
+    'Wal-\'asr. Innal-insana lafi khusr. Illal-lazina amanu wa \'amilus-salihati wa tawasau bil-haqqi wa tawasau bis-sabr.',
+    'Masa itu sangat berharga. Orang yang beruntung ialah yang beriman, buat kebaikan dan saling menasihati.',
+    'Time is precious. The successful ones are those who believe, do good deeds and advise one another.',
+  ),
+];
+
+// ============================================================ Zikir Tasbih
+class ZikirItem {
+  final String id;
+  final String arabic;
+  final String rumi;
+  final String meaningMs;
+  final String meaningEn;
+  const ZikirItem(this.id, this.arabic, this.rumi, this.meaningMs, this.meaningEn);
+}
+
+const List<ZikirItem> zikirItems = [
+  ZikirItem('subhanallah', 'سُبْحَانَ اللّٰه', 'SubhanAllah', 'Maha Suci Allah', 'Glory be to Allah'),
+  ZikirItem('alhamdulillah', 'اَلْحَمْدُ لِلّٰه', 'Alhamdulillah', 'Segala puji bagi Allah', 'All praise is for Allah'),
+  ZikirItem('allahuakbar', 'اَللّٰهُ اَكْبَر', 'Allahu Akbar', 'Allah Maha Besar', 'Allah is the Greatest'),
+];

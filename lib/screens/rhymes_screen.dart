@@ -122,8 +122,14 @@ class _RhymeDetailScreenState extends State<RhymeDetailScreen> {
             ),
             const SizedBox(height: 16),
             FilledButton.icon(
-              icon: const Icon(Icons.volume_up, size: 28),
-              label: Text(s.t('Dengar Lagu', 'Listen to the Song')),
+              icon: const Icon(Icons.music_note, size: 28),
+              label: Text(s.t('Dengar Melodi', 'Play Melody')),
+              onPressed: () => AudioService.instance.playMelody(item.id),
+            ),
+            const SizedBox(height: 10),
+            OutlinedButton.icon(
+              icon: const Icon(Icons.volume_up, size: 24),
+              label: Text(s.t('Baca Lirik', 'Read Lyrics')),
               onPressed: () =>
                   AudioService.instance.speak(item.lyrics, lang: 'en-US'),
             ),

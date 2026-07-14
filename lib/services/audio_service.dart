@@ -10,14 +10,38 @@ class AudioService {
 
   final AudioPlayer _music = AudioPlayer();
   final AudioPlayer _sfx = AudioPlayer();
+  final AudioPlayer _loop = AudioPlayer();
   final FlutterTts _tts = FlutterTts();
   bool _musicStarted = false;
+  String? currentLoop;
 
   Future<void> init() async {
     await _music.setReleaseMode(ReleaseMode.loop);
     await _music.setVolume(0.35);
+    await _loop.setReleaseMode(ReleaseMode.loop);
+    await _loop.setVolume(0.6);
     await _tts.setSpeechRate(0.45); // Perlahan sedikit untuk kanak-kanak.
     await _tts.setPitch(1.1);
+  }
+
+  /// Main bunyi loop tidur (assets/audio/loops/<id>.wav).
+  /// Muzik latar dijeda dahulu supaya tidak bertindih.
+  Future<void> playLoop(String id) async {
+    try {
+      await _music.pause();
+      await _loop.stop();
+      await _loop.play(AssetSource('audio/loops/$id.wav'));
+      currentLoop = id;
+    } catch (_) {}
+  }
+
+  /// Henti bunyi loop tidur dan pulihkan muzik latar (jika dihidupkan).
+  Future<void> stopLoop() async {
+    try {
+      await _loop.stop();
+      currentLoop = null;
+      await updateMusic();
+    } catch (_) {}
   }
 
   /// Mula / henti muzik latar mengikut tetapan semasa.
@@ -42,6 +66,38 @@ class AudioService {
     if (!AppSettings.instance.soundOn) return;
     try {
       await _sfx.play(AssetSource('audio/$file'));
+    } catch (_) {}
+  }
+
+  /// Main melodi instrumental lagu kanak-kanak (assets/audio/rhymes/<id>.wav).
+  Future<void> playMelody(String id) async {
+    if (!AppSettings.instance.soundOn) return;
+    try {
+      await _sfx.stop();
+      await _sfx.play(AssetSource('audio/rhymes/$id.wav'));
+    } catch (_) {}
+  }
+
+  /// Bacaan surah: cuba rakaman qari (assets/audio/surah/<id>.mp3) dahulu.
+  /// Jika fail tiada, fallback kepada TTS Arab (untuk pengenalan sahaja).
+  /// Pulangkan true jika rakaman qari digunakan.
+  Future<bool> playQariOrTts(String id, String arabicText) async {
+    if (!AppSettings.instance.soundOn) return false;
+    try {
+      await _sfx.stop();
+      await _sfx.play(AssetSource('audio/surah/$id.mp3'));
+      return true;
+    } catch (_) {
+      await speakArabic(arabicText);
+      return false;
+    }
+  }
+
+  /// Henti bacaan surah / kesan bunyi yang sedang dimainkan.
+  Future<void> stopSfx() async {
+    try {
+      await _sfx.stop();
+      await _tts.stop();
     } catch (_) {}
   }
 

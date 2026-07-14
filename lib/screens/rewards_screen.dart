@@ -35,6 +35,21 @@ final List<_ModuleInfo> _modules = [
       rhymeItems.length),
   _ModuleInfo('bodyparts', '🧍', 'Anggota Badan', 'Body Parts',
       bodyPartItems.length),
+  _ModuleInfo('fruits', '🍎', 'Buah & Sayur', 'Fruits & Veggies',
+      fruitItems.length),
+  _ModuleInfo('vehicles', '🚗', 'Kenderaan', 'Vehicles', vehicleItems.length),
+  _ModuleInfo('opposites', '🔄', 'Lawan Kata', 'Opposites',
+      oppositeItems.length),
+  _ModuleInfo('family', '👨‍👩‍👧', 'Keluarga', 'Family', familyItems.length),
+  _ModuleInfo('weather', '☀️', 'Cuaca', 'Weather', weatherItems.length),
+  _ModuleInfo('surah', '📗', 'Surah Pendek', 'Short Surahs',
+      surahItems.length),
+  _ModuleInfo('solat', '🕌', 'Langkah Solat', 'How to Pray',
+      solatSteps.length),
+  _ModuleInfo('wudhu', '💧', 'Langkah Wudhu', 'How to Wudhu',
+      wudhuSteps.length),
+  _ModuleInfo('adab', '🧼', 'Adab Harian', 'Daily Manners',
+      adabItems.length),
 ];
 
 class RewardsScreen extends StatelessWidget {

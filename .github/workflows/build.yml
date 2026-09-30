@@ -20,11 +20,24 @@ jobs:
         with:
           channel: stable
 
+      - name: Guna keystore debug tetap (elak konflik tandatangan)
+        run: |
+          mkdir -p ~/.android
+          cp .github/keystore/debug.keystore ~/.android/debug.keystore
+
       - name: Jana folder platform android
         run: flutter create . --project-name muslim_smart_kids --platforms android
 
       - name: Pasang pakej
         run: flutter pub get
+
+      - name: Tukar nama aplikasi kepada "Humaira Smart Kids"
+        run: |
+          sed -i 's/android:label="muslim_smart_kids"/android:label="Humaira Smart Kids"/' android/app/src/main/AndroidManifest.xml
+          grep 'android:label' android/app/src/main/AndroidManifest.xml
+
+      - name: Jana ikon aplikasi
+        run: dart run flutter_launcher_icons
 
       - name: Bina APK release
         run: flutter build apk --release

@@ -4,6 +4,7 @@ import 'screens/home_screen.dart';
 import 'services/app_settings.dart';
 import 'services/audio_service.dart';
 import 'services/rewards_service.dart';
+import 'services/smart_engine.dart';
 import 'theme/app_theme.dart';
 
 Future<void> main() async {
@@ -11,6 +12,8 @@ Future<void> main() async {
   await AppSettings.instance.load();
   await RewardsService.instance.load();
   await AudioService.instance.init();
+  await SmartEngine.instance.load();
+  SmartEngine.instance.touchStreak();
   runApp(const MuslimSmartKidsApp());
 }
 
@@ -23,7 +26,7 @@ class MuslimSmartKidsApp extends StatelessWidget {
     return AnimatedBuilder(
       animation: AppSettings.instance,
       builder: (context, _) => MaterialApp(
-        title: 'Muslim Smart Kids',
+        title: 'Humaira Smart Kids',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light,
         home: const HomeScreen(),

@@ -3,8 +3,9 @@
 Aplikasi pembelajaran Android untuk kanak-kanak berumur 1–6 tahun, dibina dengan Flutter dan Material Design 3.
 
 - Pembelajaran menyeronokkan melalui permainan (10–20 minit sehari)
-- Asas agama Islam: Huruf Hijaiyah, Doa Harian, Rukun Islam
+- Asas agama Islam: Huruf Hijaiyah, Doa Harian, Rukun Islam, Surah Pendek, Tasbih, 99 Nama Allah, Nama-nama Rasul
 - 5 permainan IQ, setiap satu dengan 3 tahap kesukaran
+- **Pembelajaran Adaptif ("Semakan Pintar")** — enjin spaced-repetition offline yang kesan item lemah/kuat anak merentas semua modul, dengan papan pemuka "Wawasan Pintar" untuk ibu bapa
 - Sistem ganjaran: bintang, lencana & kemajuan
 - Dwibahasa (Bahasa Melayu / English), tiada iklan, berfungsi tanpa internet
 
@@ -21,7 +22,23 @@ Aplikasi pembelajaran Android untuk kanak-kanak berumur 1–6 tahun, dibina deng
 | Doa Harian | 6 doa: teks Arab, rumi, maksud & audio |
 | Rukun Islam | 5 rukun bergambar dengan penjelasan ringkas |
 | Permainan IQ | Memory Card, Padankan Gambar, Puzzle, Cari Bayang, Kira Objek |
+| Semakan Pintar | Kuiz adaptif merentas ~16 modul (ABC, Hijaiyah, Haiwan, 99 Nama Allah, dll.), pilih soalan ikut spaced repetition |
+| Wawasan Pintar | Papan pemuka ibu bapa: streak harian, ketepatan, modul perlu perhatian |
 | Ganjaran | Bintang, 6 lencana, kemajuan modul |
+
+### Pembelajaran Adaptif (Semakan Pintar)
+
+Enjin `SmartEngine` (`lib/services/smart_engine.dart`) guna kaedah kotak Leitner
+(spaced repetition) 100% offline — tiada AI/API/internet:
+
+- Setiap soalan direkod sebagai betul/salah → kotak penguasaan (0–5) & tarikh
+  ulangan seterusnya dikemaskini secara automatik.
+- Sesi "Semakan Pintar" mengutamakan item lemah/tertunggak, diseimbangkan
+  merentas modul supaya tidak berat sebelah ke satu modul besar.
+- Skrin "Wawasan Pintar" (bawah Untuk Ibu Bapa) memaparkan streak harian,
+  ketepatan keseluruhan, dan modul yang paling perlu perhatian.
+- Semua data kekal dalam telefon (`shared_preferences`) — sama seperti
+  ganjaran & tetapan sedia ada.
 
 ## Cara Bina APK
 
@@ -66,10 +83,10 @@ APK terhasil di `build/app/outputs/flutter-apk/app-release.apk`.
 lib/
 ├── main.dart                 # Titik masuk
 ├── theme/app_theme.dart      # Tema pastel Material 3
-├── services/                 # Tetapan, audio/TTS, ganjaran
+├── services/                 # Tetapan, audio/TTS, ganjaran, smart_engine (adaptif)
 ├── data/app_data.dart        # Semua kandungan (ABC, doa, hijaiyah, dll.)
 ├── widgets/                  # Kad, dialog menang, pembantu kongsi
-├── screens/                  # 12 skrin (utama, modul, tetapan, ganjaran)
+├── screens/                  # Skrin utama, modul, tetapan, ganjaran, Semakan/Wawasan Pintar
 └── games/                    # 5 permainan IQ (3 tahap setiap satu)
 ```
 

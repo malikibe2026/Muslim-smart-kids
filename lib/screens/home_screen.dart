@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/app_data.dart';
 import '../services/app_settings.dart';
 import '../services/audio_service.dart';
+import '../services/smart_engine.dart';
 import '../theme/app_theme.dart';
 import '../widgets/menu_card.dart';
 import '../widgets/star_counter.dart';
@@ -31,6 +32,8 @@ import 'rukun_screen.dart';
 import 'settings_screen.dart';
 import 'shapes_screen.dart';
 import 'simple_grid_screen.dart';
+import 'smart_insights_screen.dart';
+import 'smart_review_screen.dart';
 import 'steps_screen.dart';
 import 'surah_screen.dart';
 import 'tasbih_screen.dart';
@@ -175,11 +178,15 @@ class _HomeScreenState extends State<HomeScreen> {
               const NameCallScreen()),
           _Menu('🧩', s.t('Permainan IQ', 'IQ Games'),
               const GamesMenuScreen()),
+          _Menu('🧠', s.t('Semakan Pintar', 'Smart Review'),
+              const SmartReviewScreen()),
           _Menu('🏆', s.t('Ganjaran', 'Rewards'), const RewardsScreen()),
         ]),
         _Section(s.t('👨‍👩‍👧 Untuk Ibu Bapa', '👨‍👩‍👧 For Parents'), [
           _Menu('📊', s.t('Rekod Pertumbuhan', 'Growth Tracker'),
               const GrowthScreen()),
+          _Menu('📈', s.t('Wawasan Pintar', 'Smart Insights'),
+              const SmartInsightsScreen()),
         ]),
       ];
 
@@ -215,7 +222,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('🕌 Muslim Smart Kids',
+                          const Text('🕌 Humaira Smart Kids',
                               style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w900,
@@ -258,6 +265,74 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
+              ),
+            ),
+            // ------- Cadangan Pintar Hari Ini (Pembelajaran Adaptif) -------
+            SliverToBoxAdapter(
+              child: AnimatedBuilder(
+                animation: SmartEngine.instance,
+                builder: (context, _) {
+                  final rec = SmartEngine.instance.dailyRecommendation(s.isMs);
+                  if (rec == null) return const SizedBox.shrink();
+                  return Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 0, 16, 4),
+                    child: Material(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(22),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(22),
+                        onTap: () async {
+                          await Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (_) => const SmartReviewScreen()),
+                          );
+                          if (mounted) setState(() {});
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(14),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(22),
+                            border: Border.all(
+                                color: AppTheme.accent.withOpacity(0.4)),
+                            boxShadow: AppTheme.softShadow(opacity: 0.06),
+                          ),
+                          child: Row(
+                            children: [
+                              const Text('🧠', style: TextStyle(fontSize: 28)),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      s.t('Cadangan Pintar Hari Ini',
+                                          "Today's Smart Pick"),
+                                      style: const TextStyle(
+                                          fontSize: 12.5,
+                                          fontWeight: FontWeight.w800,
+                                          color: AppTheme.accent),
+                                    ),
+                                    const SizedBox(height: 2),
+                                    Text(
+                                      rec,
+                                      style: const TextStyle(
+                                          fontSize: 13.5,
+                                          fontWeight: FontWeight.w600,
+                                          color: AppTheme.textDark),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Icon(Icons.chevron_right,
+                                  color: AppTheme.textDark),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
             // ------- Seksyen berkategori -------

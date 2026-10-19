@@ -5,6 +5,9 @@ on:
     branches: [video-web]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   shots:
     runs-on: ubuntu-latest
@@ -39,8 +42,11 @@ jobs:
           sleep 3
           node tool/video/tangkap.js http://localhost:8080 shots
 
-      - name: Muat naik tangkapan skrin
-        uses: actions/upload-artifact@v4
-        with:
-          name: shots
-          path: shots/
+      - name: Simpan tangkapan skrin ke cawangan
+        run: |
+          mkdir -p tool/video/shots && cp shots/*.png tool/video/shots/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tool/video/shots
+          git commit -m "Tangkapan skrin video [skip ci]" || echo "tiada perubahan"
+          git push

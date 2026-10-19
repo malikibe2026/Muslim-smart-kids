@@ -1,0 +1,46 @@
+name: Tangkap Skrin Video (web)
+
+on:
+  push:
+    branches: [video-web]
+  workflow_dispatch:
+
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Jana folder platform web
+        run: flutter create . --project-name muslim_smart_kids --platforms web
+
+      - name: Pasang pakej
+        run: flutter pub get
+
+      - name: Bina versi web (entrypoint video)
+        run: flutter build web --release -t lib/main_video.dart
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pasang Playwright
+        run: |
+          npm i --no-save playwright@1.48.2
+          npx playwright install --with-deps chromium
+
+      - name: Tangkap skrin
+        run: |
+          python3 -m http.server 8080 -d build/web >/dev/null 2>&1 &
+          sleep 3
+          node tool/video/tangkap.js http://localhost:8080 shots
+
+      - name: Muat naik tangkapan skrin
+        uses: actions/upload-artifact@v4
+        with:
+          name: shots
+          path: shots/
